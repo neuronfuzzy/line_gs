@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <title>Football Live Score</title>
+</head>
+<body>
+  <div class="container">
+    <div id="live-score" class="text-center">
+      <h1>Football Live Score</h1>
+      <div class="row">
+        <div class="col-md-6">
+          <h2>Team A</h2>
+          <p id="team-a-score">0</p>
+        </div>
+        <div class="col-md-6">
+          <h2>Team B</h2>
+          <p id="team-b-score">0</p>
+        </div>
+      </div>
+      <button id="increment-team-a" class="btn btn-primary">+</button>
+      <button id="increment-team-b" class="btn btn-primary">+</button>
+    </div>
+  </div>
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+      
+    <script>
+        // JavaScript code to handle live score updates
+  $(document).ready(function() {
+    var teamAScore = 0;
+    var teamBScore = 0;
+    
+    // Event listener for incrementing team A score
+    $("#increment-team-a").on("click", function() {
+      teamAScore++;
+      $("#team-a-score").text(teamAScore);
+    });
+    
+    // Event listener for incrementing team B score
+    $("#increment-team-b").on("click", function() {
+      teamBScore++;
+      $("#team-b-score").text(teamBScore);
+    });
+  });
+</script>
+
+</body>
+</html>

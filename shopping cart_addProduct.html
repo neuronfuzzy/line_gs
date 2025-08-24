@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  <title>Shopping Cart</title>
+</head>
+<body>
+  <div class="container">
+    <h1>Product Page</h1>
+    <div class="row">
+      <div class="col-md-4">
+        <div class="card">
+          <img src="https://lh5.googleusercontent.com/d/1Vdlb1B41sfKG200lwo0WpUDxv-V1zOfV" class="card-img-top" alt="Product Image">
+          <div class="card-body">
+            <h5 class="card-title">ชื่อสินค้า: ไก่พื้นเมือง</h5>
+            <p class="card-text">รายละเอียดของสินค้า: ไก่เหลืองหางขาว</p>
+            <p class="card-text">3500฿.00</p>
+            <p class="card-text">5 ตัว</p>
+            <button class="btn btn-primary" onclick="addToCart()">เพิ่มลงตะกร้า</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row mt-3">
+      <div class="col-md-12">
+        <h2>ตะกร้าสินค้า</h2>
+        <ul id="cart-items">
+          <!-- Cart items will be displayed here -->
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@1.16.1/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <script>
+    let cart = [];
+    function addToCart(productName, price, quantity) {
+        const product = {
+    name: productName,
+    price: price,
+    quantity: quantity
+  };    
+        cart.push(product);
+      // JavaScript function to add the product to the cart
+      // You can add the product to cart using JavaScript array and DOM manipulation
+      // For example: 
+      // 1. Create a JavaScript array to store the added products
+      // 2. When "Add to Cart" button is clicked, push the product details into the array
+      // 3. Update the HTML of the Shopping Cart section to display the added products
+
+    }
+    let product = { name: "Product 1", pro_detail:"Notebook_dell",price: 10 };
+addToCart("Apple", 2.5, 5);
+addToCart("Banana", 1.5, 3);
+console.log(cart);
+  </script>
+</body>
+</html>

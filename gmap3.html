@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="initial-scale=1.0, user-scalable=no" />
+<style type="text/css">
+html { height: 100% }
+body { height: 100%; margin: 0; padding: 0 }
+#map-canvas { height: 100% }
+</style>
+<script type="text/javascript"
+src="https://maps.googleapis.com/maps/api/js?key=&sensor=true&language=th">
+</script>
+<script type="text/javascript">
+function initialize() {
+var mapOptions = {
+center: new google.maps.LatLng(16.82827594441486, 100.20730767948345),
+zoom: 5,
+mapTypeId: google.maps.MapTypeId.ROADMAP
+};
+var map = new google.maps.Map(document.getElementById("map-canvas"),
+mapOptions);
+}
+</script>
+</head>
+<body onload="initialize()">
+<div id="map-canvas"/>
+</body>
+</html>
+
+Read more: http://www.webub.com/Google%20map%20%E0%B9%80%E0%B8%82%E0%B8%B5%E0%B8%A2%E0%B8%99%E0%B9%82%E0%B8%9B%E0%B8%A3%E0%B9%81%E0%B8%81%E0%B8%A3%E0%B8%A1%E0%B8%9A%E0%B8%99%E0%B9%80%E0%B8%A7%E0%B9%87%E0%B8%9A%E0%B9%81%E0%B8%9C%E0%B8%99%E0%B8%97%E0%B8%B5%E0%B9%88%20%E0%B8%95%E0%B9%89%E0%B8%AD%E0%B8%87%E0%B8%A3%EF%BF%BD-1520-34/
+Engine by www.webUB.com

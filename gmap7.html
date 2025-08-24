@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html> 
+<head> 
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8" /> 
+  <title>Google Maps Multiple Markers</title> 
+  <script src="http://maps.google.com/maps/api/js?key=AIzaSyBJuwG3dwl8tnkWxHhVeujsFLemtwNkNKc" 
+          type="text/javascript"></script>
+  <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBJuwG3dwl8tnkWxHhVeujsFLemtwNkNKc&callback=initMap"
+          type="text/javascript"></script>
+</head> 
+<body>
+  <div id="map" style="width: 500px; height: 400px;"></div>
+
+  <script type="text/javascript">
+    var locations = [
+      ['ฟาร์ม รุ่งเรืองฟาร์ม', 16.62835905,	100.4429084, 4],
+      ['ฟาร์ม รร. พิษณุโลกปัญญานุกุล',16.93257551	,100.2361269 , 5],
+      ['ฟาร์ม วังทอง', 16.73753367,	100.4320405, 3],
+      ['ฟาร์ม เพิ่มทรัพย์',17.64544331	,100.0984418, 2],
+      ['ฟาร์ม ซุ้มสันติภาพ',16.8556628,100.2697412 , 1]
+    ];
+    
+    var map = new google.maps.Map(document.getElementById('map'), {
+      zoom: 10,
+      center: new google.maps.LatLng(16.62835905,100.4429084),
+      mapTypeId: google.maps.MapTypeId.ROADMAP
+    });
+    
+    var infowindow = new google.maps.InfoWindow();
+
+    var marker, i;
+    
+    for (i = 0; i < locations.length; i++) {  
+      marker = new google.maps.Marker({
+        position: new google.maps.LatLng(locations[i][1], locations[i][2]),
+        map: map
+      });
+      
+      google.maps.event.addListener(marker, 'click', (function(marker, i) {
+        return function() {
+          infowindow.setContent(locations[i][0]);
+          infowindow.open(map, marker);
+        }
+      })(marker, i));
+    }
+  </script>
+</body>
+</html>

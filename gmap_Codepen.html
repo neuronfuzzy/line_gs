@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en-US">
+    <head>
+        <title> Google api test</title>
+        <meta name="veiwport" consent="initial-scale=1.0">
+        <meta charset="utf-8">
+
+        <link href="js_codepen_map.css" rel="stylesheet" />
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    </head>
+    <body>
+        <div class="container">
+
+            <ul class="hex-area">
+                <li class="hex1"></li>
+                <li class="hex2"></li>
+                <li class="hex3"></li>
+                <li class="hex4"></li>
+                <li class="hex5"></li>
+                <li class="hex6"></li>
+            </ul>
+
+            <div class="row mt-3">
+                <div class="col text-center">
+                    <h1>Maps api test</h1>
+                </div>
+            </div>
+
+            <div class="row mt-2">
+                <div class="col">
+                    <input class="form-control" id="search" type="text" placeholder="Search..."/>
+                </div>
+            </div>
+            
+            <div class="row">
+                <div class="col">
+                    <div id="map"></div>
+                </div>
+            </div>
+    
+            <!-- Script and api script -->
+            <script src="js_codepenmap.js"></script>
+            <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBJuwG3dwl8tnkWxHhVeujsFLemtwNkNKc&callback=initMap&libraries=places"async defer></script>
+        </div>
+        
+    </body>
+</html>
