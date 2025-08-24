@@ -1,0 +1,70 @@
+function.txt
+++++++++++++++++++++ สร้างฟังก์ชั่น จัดการ Font วางที่บรรทัด 246  ++++++++++++++++++++++++++
+function createTable() {
+      pdfMake.fonts = {
+        THSarabun: {
+            normal: 'THSarabun.ttf',
+            bold: 'THSarabun-Bold.ttf',
+            italics: 'THSarabun-Italic.ttf',
+            bolditalics: 'THSarabun-BoldItalic.ttf'
+        },
+        Prompt: {
+            normal: 'Prompt.ttf',
+            bold: 'Prompt-bold.ttf',
+            
+        }
+    }
+}
+
+
+++++++++++++++++++++ คำสั่งใส่ปุ่ม วางที่บรรทัด 293 ++++++++++++++++++++++++++
+      dom: 'Bfrtip',
+        buttons: [
+          { extend: 'excel', messageTop: 'ข้อมูลประจำ'+today, className: 'btn-success'},
+          { extend: 'copy', className: 'btn-danger' },
+          { extend: 'csvHtml5', className: 'btn-info' },
+          { // กำหนดพิเศษเฉพาะปุ่ม pdf
+                            extend: 'pdfHtml5', // ปุ่มสร้าง pdf ไฟล์
+                            text: 'ดาวน์โหลด PDF',
+                            title: 'สรุปการมาเรียนประจำวัน '+ $('body').find('.title:visible').text().replace('Calculator For ','').replace(/E\s+F/g,'E F')+today,
+                            messageTop: 'โรงเรียนหกสิบพรรษาวิทยาคม อุบลราชธานี',
+                            className: 'btn-warning',
+                            pageSize: 'A4',   // ขนาดหน้ากระดาษเป็น A4            
+                            customize: function (doc) { // ส่วนกำหนดเพิ่มเติม ส่วนนี้จะใช้จัดการกับ pdfmake
+                                // กำหนด style หลัก
+                                doc.defaultStyle = {
+                                    font: 'THSarabun',
+                                    fontSize: 16
+                                };
+                                console.log(doc)
+                                // กำหนดความกว้างของ header แต่ละคอลัมน์หัวข้อ
+                                let widths = new Array(6).fill(50)
+                                doc.content[2].table.widths = [50, 100, "*", "*", "*", "*"],
+                                doc.styles.tableHeader.fontSize = 16; // กำหนดขนาด font ของ header
+                                doc.styles.title = {
+                                  fontSize: 24,
+                                  bold: true,
+                                  alignment: 'center'
+                                }
+                                
+                                var rowCount = doc.content[2].table.body.length; // หาจำนวนแะวทั้งหมดในตาราง
+                                // วนลูปเพื่อกำหนดค่าแต่ละคอลัมน์ เช่นการจัดตำแหน่ง
+                                for (i = 1; i < rowCount; i++) { // i เริ่มที่ 1 เพราะ i แรกเป็นแถวของหัวข้อ
+                                    doc.content[2].table.body[i][0].alignment = 'center'; // คอลัมน์แรกเริ่มที่ 0
+                                    doc.content[2].table.body[i][1].alignment = 'center';
+                                    doc.content[2].table.body[i][2].alignment = 'center';
+                                    doc.content[2].table.body[i][3].alignment = 'center';
+                                    doc.content[2].table.body[i][4].alignment = 'center';
+                                    doc.content[2].table.body[i][5].alignment = 'center';
+                                };
+                                console.log(doc); // เอาไว้ debug ดู doc object proptery เพื่ออ้างอิงเพิ่มเติม
+                            },
+                            download: 'open'
+                        }, // สิ้นสุดกำหนดพิเศษปุ่ม pdf
+        ],
+
+//++++++++++++++++++  วางที่บรรทัด 345 +++++++++++++++++++++++++++
+
+<script>
+    <?!= HtmlService.createHtmlOutputFromFile('vfs').getContent() ?>
+  </script>

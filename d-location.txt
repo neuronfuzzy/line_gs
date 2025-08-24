@@ -1,0 +1,192 @@
+{
+  "line": {
+    "type": "flex",
+    "contents": {
+      "body": {
+        "layout": "vertical",
+        "type": "box",
+        "contents": [
+          {
+            "size": "sm",
+            "color": "#B45F04",
+            "text": "การดูแลรักษาไก่ชน",
+            "weight": "bold",
+            "type": "text"
+          },
+          {
+            "size": "xl",
+            "text": "by อ.รติวัฒน์ ปารีศรี",
+            "type": "text",
+            "weight": "bold",
+            "margin": "md"
+          },
+          {
+            "color": "#aaaaaa",
+            "wrap": true,
+            "text": "นวัตกรรม Line bot ไก่ชน",
+            "type": "text",
+            "size": "xs"
+          },
+          {
+            "color": "#D43D1D",
+            "type": "separator",
+            "margin": "sm"
+          },
+          {
+            "layout": "vertical",
+            "margin": "xl",
+            "spacing": "sm",
+            "contents": [
+              {
+                "type": "box",
+                "layout": "horizontal",
+                "contents": [
+                  {
+                    {
+						"type": "location",
+						"title": "ฟาร์มไร่ราชันย์",
+						"address": "33/10 ม.11 ต.หัวรอ อ.เมือง จ.พิษณุโลก",
+						"latitude": 16.86780487778998,
+						"longitude": 100.26746536441793
+}
+                  },
+                  {
+                    "color": "#4B088A",
+                    "action": {
+                      "uri": "https://www.google.com/maps/place/%E0%B8%9F%E0%B8%B2%E0%B8%A3%E0%B9%8C%E0%B8%A1%E0%B9%84%E0%B8%A3%E0%B9%88%E0%B8%A3%E0%B8%B2%E0%B8%8A%E0%B8%B1%E0%B8%99%E0%B8%A2%E0%B9%8C/@16.8676098,100.26746,17z",
+                      "type": "uri"
+                    },
+                    "size": "sm",
+                    "type": "text",
+                    "text": "ฟาร์มไร่ราชันย์🐠",
+                    "align": "end"
+                  }
+                ]
+              },
+              {
+                "contents": [
+                  {
+                    "size": "sm",
+                    "color": "#610B38",
+                    "text": "--อาการเลือดลงแข้ง",
+                    "type": "text"
+                  },
+                  {
+                    "size": "sm",
+                    "type": "text",
+                    "align": "end",
+                    "action": {
+                      "uri": "https://sites.google.com/psru.ac.th/inovationcock-game/%E0%B8%82%E0%B8%AD%E0%B8%A1%E0%B8%A5%E0%B8%9E%E0%B8%99%E0%B8%90%E0%B8%B2%E0%B8%99%E0%B9%84%E0%B8%81%E0%B8%8A%E0%B8%99/%E0%B8%81%E0%B8%B2%E0%B8%A3%E0%B8%94%E0%B9%81%E0%B8%A5%E0%B8%A3%E0%B8%81%E0%B8%A9%E0%B8%B2%E0%B9%84%E0%B8%81%E0%B8%8A%E0%B8%99/%E0%B8%AD%E0%B8%B2%E0%B8%81%E0%B8%B2%E0%B8%A3%E0%B9%80%E0%B8%A5%E0%B8%AD%E0%B8%94%E0%B8%A5%E0%B8%87%E0%B9%81%E0%B8%82%E0%B8%87",
+                      "type": "uri"
+                    },
+                    "color": "#610B38",
+                    "text": "ข้อมูล1🐢"
+                  }
+                ],
+                "layout": "horizontal",
+                "type": "box"
+              },
+              {
+                "layout": "horizontal",
+                "contents": [
+                  {
+                    "color": "#642EFE",
+                    "type": "text",
+                    "text": "--วิธีการรักษาหลังชน",
+                    "size": "sm"
+                  },
+                  {
+                    "action": {
+                      "type": "uri",
+                      "uri": "https://sites.google.com/psru.ac.th/inovationcock-game/%E0%B8%82%E0%B8%AD%E0%B8%A1%E0%B8%A5%E0%B8%9E%E0%B8%99%E0%B8%90%E0%B8%B2%E0%B8%99%E0%B9%84%E0%B8%81%E0%B8%8A%E0%B8%99/%E0%B8%81%E0%B8%B2%E0%B8%A3%E0%B8%94%E0%B9%81%E0%B8%A5%E0%B8%A3%E0%B8%81%E0%B8%A9%E0%B8%B2%E0%B9%84%E0%B8%81%E0%B8%8A%E0%B8%99/%E0%B8%A7%E0%B8%98%E0%B8%81%E0%B8%B2%E0%B8%A3%E0%B8%A3%E0%B8%81%E0%B8%A9%E0%B8%B2%E0%B8%AB%E0%B8%A5%E0%B8%87%E0%B8%8A%E0%B8%99"
+                    },
+                    "text": "ข้อมูล2 🦨",
+                    "size": "sm",
+                    "color": "#642EFE",
+                    "type": "text",
+                    "align": "end"
+                  }
+                ],
+                "type": "box"
+              },
+              {
+                "contents": [
+                  {
+                    "type": "text",
+                    "color": "#088A08",
+                    "size": "sm",
+                    "text": "--การดูแลไก่หลังชน"
+                  },
+                  {
+                    "color": "#088A08",
+                    "action": {
+                      "uri": "https://sites.google.com/psru.ac.th/inovationcock-game/%E0%B8%82%E0%B8%AD%E0%B8%A1%E0%B8%A5%E0%B8%9E%E0%B8%99%E0%B8%90%E0%B8%B2%E0%B8%99%E0%B9%84%E0%B8%81%E0%B8%8A%E0%B8%99/%E0%B8%81%E0%B8%B2%E0%B8%A3%E0%B8%94%E0%B9%81%E0%B8%A5%E0%B8%A3%E0%B8%81%E0%B8%A9%E0%B8%B2%E0%B9%84%E0%B8%81%E0%B8%8A%E0%B8%99/%E0%B8%81%E0%B8%B2%E0%B8%A3%E0%B8%94%E0%B9%81%E0%B8%A5%E0%B9%84%E0%B8%81%E0%B8%8A%E0%B8%99-%E0%B8%AB%E0%B8%A5%E0%B8%87%E0%B8%8A%E0%B8%99%E0%B8%A1%E0%B8%B2",
+                      "type": "uri"
+                    },
+                    "size": "sm",
+                    "text": "ข้อมูล3 ⛹️‍♂️",
+                    "align": "end",
+                    "type": "text"
+                  }
+                ],
+                "type": "box",
+                "layout": "horizontal"
+              }
+            ],
+            "type": "box"
+          },
+          {
+            "margin": "xl",
+            "type": "separator"
+          },
+          {
+            "layout": "horizontal",
+            "type": "box",
+            "contents": [
+              {
+                "gravity": "bottom",
+                "action": {
+                  "text": "m1",
+                  "type": "message",
+                  "label": "ข้อมูลพื้นฐานไก่ชน"
+                },
+                "style": "primary",
+                "height": "sm",
+                "color": "#6E6E6E",
+                "type": "button"
+              },
+              {
+                "type": "separator",
+                "margin": "xl"
+              },
+              {
+                "action": {
+                  "type": "message",
+                  "text": "l1",
+                  "label": "สายพันธ์ไก่ชน"
+                },
+                "gravity": "bottom",
+                "style": "primary",
+                "color": "#610B38",
+                "height": "sm",
+                "type": "button"
+              },
+              {
+                "size": "md",
+                "type": "spacer"
+              }
+            ],
+            "margin": "md"
+          }
+        ]
+      },
+      "type": "bubble",
+      "styles": {
+        "footer": {
+          "separator": true
+        }
+      }
+    },
+    "altText": "การดูแลรักษาไก่ชน"
+  }
+}

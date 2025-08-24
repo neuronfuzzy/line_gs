@@ -1,0 +1,144 @@
+//intent : type_pradu , TP : padu เดิม
+{
+  "line": {
+    "contents": {
+      "header": {
+        "position": "relative",
+        "layout": "vertical",
+        "contents": [
+          {
+            "type": "text",
+            "style": "normal",
+            "weight": "regular",
+            "text": "Botไก่ประดู่ by Ratiwat"
+          }
+        ],
+        "type": "box",
+        "action": {
+          "type": "message",
+          "text": "inv1",
+          "label": "action"
+        },
+        "backgroundColor": "#F781F3"
+      },
+      "body": {
+        "borderWidth": "normal",
+        "action": {
+          "text": "ร้านค้า ตัวอย่าง OTOP.",
+          "type": "message",
+          "label": "action"
+        },
+        "contents": [
+          {
+            "text": "ไก่ประดู่",
+            "action": {
+              "label": "action",
+              "text": "e-mail:ratiwat@psru.ac.th",
+              "type": "message"
+            },
+            "type": "text"
+          },
+          {
+            "text": "ฟาร์มไร่ราชันย์",
+            "type": "text"
+          },
+          {
+            "layout": "vertical",
+            "contents": [
+              {
+                "action": {
+                  "type": "uri",
+                  "uri": "https://sites.google.com/botchicknative.net/site-native-chicken/%E0%B8%AB%E0%B8%99%E0%B8%B2%E0%B9%81%E0%B8%A3%E0%B8%81",
+                  "label": "เว็บไซต์ไก่พื้นเมือง"
+                },
+                "style": "primary",
+                "type": "button"
+              },
+              {
+                "layout": "vertical",
+                "contents": [
+                  {
+                    "type": "button",
+                    "style": "secondary",
+                    "color": "#bc8e52",
+                    "action": {
+                      "label": "ข้อมูลไก่ประดู่",
+                      "type": "message",
+                      "text": "pradu"
+                    }
+                  }
+                ],
+                "type": "box"
+              },
+              {
+                "type": "box",
+                "layout": "vertical",
+                "contents": [
+                  {
+                    "color": "#B51B75",
+                    "type": "button",
+                    "action": {
+                      "text": "two",
+                      "type": "message",
+                      "label": "สายพันธ์ไก่พื้นเมือง"
+                    },
+                    "style": "secondary"
+                  }
+                ]
+              },
+              {
+                "type": "box",
+                "contents": [
+                  {
+                    "color": "#F3CA52",
+                    "action": {
+                      "uri": "https://sites.google.com/botchicknative.net/site-native-chicken/%E0%B8%AA%E0%B8%B2%E0%B8%A2%E0%B8%9E%E0%B8%99%E0%B8%98%E0%B9%84%E0%B8%81%E0%B8%9E%E0%B8%99%E0%B9%80%E0%B8%A1%E0%B8%AD%E0%B8%87/%E0%B9%84%E0%B8%81%E0%B8%9B%E0%B8%A3%E0%B8%B0%E0%B8%94/%E0%B9%84%E0%B8%81%E0%B8%9E%E0%B8%99%E0%B8%98%E0%B8%9B%E0%B8%A3%E0%B8%B0%E0%B8%94%E0%B8%AB%E0%B8%B2%E0%B8%87%E0%B8%94%E0%B8%B3",
+                      "label": "ข้อมูลไก่ประดู่หางดำ",
+                      "type": "uri"
+                    },
+                    "style": "secondary",
+                    "type": "button"
+                  }
+                ],
+                "layout": "vertical"
+              }
+            ],
+            "type": "box"
+          }
+        ],
+        "type": "box",
+        "justifyContent": "center",
+        "layout": "vertical",
+        "alignItems": "center",
+        "cornerRadius": "md"
+      },
+      "hero": {
+        "background": {
+          "type": "linearGradient",
+          "angle": "0deg",
+          "startColor": "#000000",
+          "endColor": "#ffffff"
+        },
+        "type": "box",
+        "action": {
+          "type": "message",
+          "text": "two",
+          "label": "ทดสอบ"
+        },
+        "contents": [
+          {
+            "aspectMode": "cover",
+            "type": "image",
+            "align": "center",
+            "url": "https://lh5.googleusercontent.com/d/1vhneFMtUDmMoxMawil2lWBMH5IjQyAOS=s350"
+          }
+        ],
+        "layout": "vertical"
+      },
+      "type": "bubble",
+      "direction": "ltr"
+    },
+    "type": "flex",
+    "altText": "ฟาร์มไก่พื้นเมือง ฟาร์มราชันย์"
+  }
+}

@@ -1,0 +1,40 @@
+Google Form + Line Notify
+*********Code.gs ***********
+//ครูอภิวัฒน์ "สอนสร้างสื่อ"
+function myFunction() {
+  var token = 'xxx'
+  var ss = SpreadsheetApp.openById('xxx')
+  var sh = ss.getSheetByName('xxx')
+  var row = sh.getLastRow();
+
+  var today = Utilities.formatDate(new Date(), "GMT+7", "dd/MM/yyyy")
+  var time = Utilities.formatDate(new Date(), "GMT+7", "HH:mm")
+ Logger.log(time)
+  for (i = 2; i <= row; i++) {
+    var date = Utilities.formatDate(sh.getRange(i, 2).getValue(), "GMT+7", "dd/MM/yyyy")
+    var timer = sh.getRange(i, 3).getValue()
+    var imgUrl = sh.getRange(i, 5).getValue()
+    var imgID = imgUrl.split('https://drive.google.com/open?id=')[1]
+
+    if (today == date && time == timer) {
+      var msg = sh.getRange(i, 4).getValue() + '\n'
+      var message = '\n แจ้งเตือน : ' + msg
+      var image = DriveApp.getFileById(imgID).getBlob()
+      sendLineNotify(message,image, token)
+    }
+  }
+}
+
+function sendLineNotify(message,image, token) {
+  var options = {
+    "method": "post",
+    "payload": {
+      "message": message,
+      "imageFile": image,
+    },
+    "headers": { "Authorization": "Bearer " + token }
+  };
+  UrlFetchApp.fetch("https://notify-api.line.me/api/notify", options);
+}
+
+******** 

@@ -1,0 +1,218 @@
+// intent : Livestock , TP : life
+// การเลี้ยงและลักษณะของไก่พื้นเมือง
+{
+  "line": {
+    "altText": "การเลี้ยงไก่และลักษณะไก่พื้นเมือง",
+    "contents": {
+      "body": {
+        "type": "box",
+        "layout": "vertical",
+        "contents": [
+          {
+            "size": "sm",
+            "text": "การเลี้ยงและลักษณะของไก่พื้นเมือง",
+            "weight": "bold",
+            "type": "text",
+            "color": "#A87676"
+          },
+          {
+            "size": "xl",
+            "type": "text",
+            "margin": "md",
+            "color": "#BEADFA",
+            "weight": "bold",
+            "text": "by อ.รติวัฒน์ ปารีศรี"
+          },
+          {
+            "size": "xs",
+            "wrap": true,
+            "type": "text",
+            "text": "Line bot ไก่พื้นเมือง ฟาร์มไร่ราชันย์",
+            "color": "#51829B"
+          },
+          {
+            "type": "separator",
+            "margin": "sm",
+            "color": "#D43D1D"
+          },
+          {
+            "spacing": "sm",
+            "contents": [
+              {
+                "contents": [
+                  {
+                    "wrap": true,
+                    "text": "การเลี้ยงและลักษณะ",
+                    "type": "text",
+                    "color": "#31B404",
+                    "size": "sm"
+                  },
+                  {
+                    "align": "end",
+                    "color": "#31B404",
+                    "action": {
+                      "uri": "https://sites.google.com/botchicknative.net/site-native-chicken/%E0%B8%82%E0%B8%AD%E0%B8%A1%E0%B8%A5%E0%B8%9E%E0%B8%99%E0%B8%90%E0%B8%B2%E0%B8%99%E0%B9%84%E0%B8%81%E0%B8%9E%E0%B8%99%E0%B9%80%E0%B8%A1%E0%B8%AD%E0%B8%87/%E0%B8%81%E0%B8%B2%E0%B8%A3%E0%B9%80%E0%B8%A5%E0%B8%A2%E0%B8%87%E0%B9%81%E0%B8%A5%E0%B8%B0%E0%B8%A5%E0%B8%81%E0%B8%A9%E0%B8%93%E0%B8%B0%E0%B8%82%E0%B8%AD%E0%B8%87%E0%B9%84%E0%B8%81%E0%B8%9E%E0%B8%99%E0%B9%80%E0%B8%A1%E0%B8%AD%E0%B8%87",
+                      "type": "uri"
+                    },
+                    "text": "ข้อมูลหลัก🤝",
+                    "type": "text",
+                    "size": "sm"
+                  }
+                ],
+                "type": "box",
+                "layout": "horizontal"
+              },
+              {
+                "layout": "horizontal",
+                "type": "box",
+                "contents": [
+                  {
+                    "text": "--โรงเรือนไก่พื้นเมือง",
+                    "color": "#3104B4",
+                    "wrap": true,
+                    "type": "text",
+                    "size": "sm"
+                  },
+                  {
+                    "action": {
+                      "uri": "https://sites.google.com/botchicknative.net/site-native-chicken/%E0%B8%82%E0%B8%AD%E0%B8%A1%E0%B8%A5%E0%B8%9E%E0%B8%99%E0%B8%90%E0%B8%B2%E0%B8%99%E0%B9%84%E0%B8%81%E0%B8%9E%E0%B8%99%E0%B9%80%E0%B8%A1%E0%B8%AD%E0%B8%87/%E0%B8%81%E0%B8%B2%E0%B8%A3%E0%B9%80%E0%B8%A5%E0%B8%A2%E0%B8%87%E0%B9%81%E0%B8%A5%E0%B8%B0%E0%B8%A5%E0%B8%81%E0%B8%A9%E0%B8%93%E0%B8%B0%E0%B8%82%E0%B8%AD%E0%B8%87%E0%B9%84%E0%B8%81%E0%B8%9E%E0%B8%99%E0%B9%80%E0%B8%A1%E0%B8%AD%E0%B8%87/%E0%B9%82%E0%B8%A3%E0%B8%87%E0%B9%80%E0%B8%A3%E0%B8%AD%E0%B8%99%E0%B8%AA%E0%B8%B2%E0%B8%AB%E0%B8%A3%E0%B8%9A%E0%B9%84%E0%B8%81%E0%B8%9E%E0%B8%99%E0%B9%80%E0%B8%A1%E0%B8%AD%E0%B8%87",
+                      "type": "uri"
+                    },
+                    "type": "text",
+                    "text": "ข้อมูล1.1👩",
+                    "align": "end",
+                    "color": "#3104B4",
+                    "size": "sm"
+                  }
+                ]
+              },
+              {
+                "layout": "horizontal",
+                "contents": [
+                  {
+                    "text": "--การผสมพันธุ์และการเลี้ยงไก่พื้นเมือง",
+                    "color": "#3104B4",
+                    "type": "text",
+                    "size": "sm"
+                  },
+                  {
+                    "type": "text",
+                    "action": {
+                      "type": "uri",
+                      "uri": "https://sites.google.com/botchicknative.net/site-native-chicken/%E0%B8%82%E0%B8%AD%E0%B8%A1%E0%B8%A5%E0%B8%9E%E0%B8%99%E0%B8%90%E0%B8%B2%E0%B8%99%E0%B9%84%E0%B8%81%E0%B8%9E%E0%B8%99%E0%B9%80%E0%B8%A1%E0%B8%AD%E0%B8%87/%E0%B8%81%E0%B8%B2%E0%B8%A3%E0%B9%80%E0%B8%A5%E0%B8%A2%E0%B8%87%E0%B9%81%E0%B8%A5%E0%B8%B0%E0%B8%A5%E0%B8%81%E0%B8%A9%E0%B8%93%E0%B8%B0%E0%B8%82%E0%B8%AD%E0%B8%87%E0%B9%84%E0%B8%81%E0%B8%9E%E0%B8%99%E0%B9%80%E0%B8%A1%E0%B8%AD%E0%B8%87/%E0%B8%81%E0%B8%B2%E0%B8%A3%E0%B8%9C%E0%B8%AA%E0%B8%A1%E0%B8%9E%E0%B8%99%E0%B8%98%E0%B9%81%E0%B8%A5%E0%B8%B0%E0%B8%81%E0%B8%B2%E0%B8%A3%E0%B9%80%E0%B8%A5%E0%B8%A2%E0%B8%87%E0%B9%84%E0%B8%81%E0%B8%9E%E0%B8%99%E0%B9%80%E0%B8%A1%E0%B8%AD%E0%B8%87"
+                    },
+                    "color": "#3104B4",
+                    "size": "sm",
+                    "text": "ข้อมูล1.2🐮",
+                    "align": "end"
+                  }
+                ],
+                "type": "box"
+              },
+              {
+                "contents": [
+                  {
+                    "type": "text",
+                    "color": "#3104B4",
+                    "text": "--การเลี้ยงดูลูกไก่",
+                    "size": "sm"
+                  },
+                  {
+                    "size": "sm",
+                    "align": "end",
+                    "type": "text",
+                    "action": {
+                      "uri": "https://sites.google.com/botchicknative.net/site-native-chicken/%E0%B8%82%E0%B8%AD%E0%B8%A1%E0%B8%A5%E0%B8%9E%E0%B8%99%E0%B8%90%E0%B8%B2%E0%B8%99%E0%B9%84%E0%B8%81%E0%B8%9E%E0%B8%99%E0%B9%80%E0%B8%A1%E0%B8%AD%E0%B8%87/%E0%B8%81%E0%B8%B2%E0%B8%A3%E0%B9%80%E0%B8%A5%E0%B8%A2%E0%B8%87%E0%B9%81%E0%B8%A5%E0%B8%B0%E0%B8%A5%E0%B8%81%E0%B8%A9%E0%B8%93%E0%B8%B0%E0%B8%82%E0%B8%AD%E0%B8%87%E0%B9%84%E0%B8%81%E0%B8%9E%E0%B8%99%E0%B9%80%E0%B8%A1%E0%B8%AD%E0%B8%87/%E0%B8%81%E0%B8%B2%E0%B8%A3%E0%B9%80%E0%B8%A5%E0%B8%A2%E0%B8%87%E0%B8%94%E0%B8%A5%E0%B8%81%E0%B9%84%E0%B8%81",
+                      "type": "uri"
+                    },
+                    "color": "#3104B4",
+                    "text": "ข้อมูล1.3♨️"
+                  }
+                ],
+                "layout": "horizontal",
+                "type": "box"
+              },
+              {
+                "contents": [
+                  {
+                    "wrap": true,
+                    "type": "text",
+                    "color": "#3104B4",
+                    "size": "sm",
+                    "text": "--อาหารไก่พื้นเมือง"
+                  },
+                  {
+                    "align": "end",
+                    "color": "#3104B4",
+                    "size": "sm",
+                    "text": "ข้อมูล1.4👹",
+                    "action": {
+                      "type": "uri",
+                      "uri": "https://sites.google.com/botchicknative.net/site-native-chicken/%E0%B8%82%E0%B8%AD%E0%B8%A1%E0%B8%A5%E0%B8%9E%E0%B8%99%E0%B8%90%E0%B8%B2%E0%B8%99%E0%B9%84%E0%B8%81%E0%B8%9E%E0%B8%99%E0%B9%80%E0%B8%A1%E0%B8%AD%E0%B8%87/%E0%B8%81%E0%B8%B2%E0%B8%A3%E0%B9%80%E0%B8%A5%E0%B8%A2%E0%B8%87%E0%B9%81%E0%B8%A5%E0%B8%B0%E0%B8%A5%E0%B8%81%E0%B8%A9%E0%B8%93%E0%B8%B0%E0%B8%82%E0%B8%AD%E0%B8%87%E0%B9%84%E0%B8%81%E0%B8%9E%E0%B8%99%E0%B9%80%E0%B8%A1%E0%B8%AD%E0%B8%87/%E0%B8%AD%E0%B8%B2%E0%B8%AB%E0%B8%B2%E0%B8%A3%E0%B8%AA%E0%B8%B3%E0%B8%AB%E0%B8%A3%E0%B8%9A%E0%B9%80%E0%B8%A5%E0%B8%A2%E0%B8%87%E0%B9%84%E0%B8%81%E0%B8%9E%E0%B8%99%E0%B9%80%E0%B8%A1%E0%B8%AD%E0%B8%87"
+                    },
+                    "type": "text"
+                  }
+                ],
+                "type": "box",
+                "layout": "horizontal"
+              }
+            ],
+            "layout": "vertical",
+            "type": "box",
+            "margin": "xl"
+          },
+          {
+            "margin": "xl",
+            "type": "separator"
+          },
+          {
+            "margin": "md",
+            "layout": "horizontal",
+            "contents": [
+              {
+                "style": "primary",
+                "height": "sm",
+                "color": "#18657a",
+                "type": "button",
+                "action": {
+                  "label": "site ไก่พื้นเมือง",
+                  "uri": "https://sites.google.com/botchicknative.net/site-native-chicken/%E0%B8%AB%E0%B8%99%E0%B8%B2%E0%B9%81%E0%B8%A3%E0%B8%81",
+                  "type": "uri"
+                },
+                "gravity": "bottom"
+              },
+              {
+                "margin": "xl",
+                "type": "separator"
+              },
+              {
+                "type": "button",
+                "color": "#E81029",
+                "height": "sm",
+                "gravity": "bottom",
+                "action": {
+                  "text": "two",
+                  "label": "สายพันธ์ไก่พื้นเมือง",
+                  "type": "message"
+                },
+                "style": "primary"
+              },
+              {
+                "type": "spacer",
+                "size": "md"
+              }
+            ],
+            "type": "box"
+          }
+        ]
+      },
+      "styles": {
+        "footer": {
+          "separator": true
+        }
+      },
+      "type": "bubble"
+    },
+    "type": "flex"
+  }
+}

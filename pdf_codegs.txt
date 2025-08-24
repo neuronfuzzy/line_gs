@@ -1,0 +1,68 @@
+การสร้าง PDF จากชีตเฉพาะแถวที่ต้องการ
+************
+code.gs
+*************
+function onOpen() {
+  const ui = SpreadsheetApp.getUi();
+  ui.createMenu('สร้างรายงาน')
+    .addItem('PDF','myPDF')
+    .addToUi();
+}
+
+function myPDF(){
+   const data = checkSel();
+   if(data.sName == 'ชีต1' && data.results){
+     createmyPDF(data.results);
+   }else{
+    SpreadsheetApp.getUi().alert('ไม่มีข้อมูลสำหรับสร้างไฟล์ PDF!');
+  }  
+}
+function createmyPDF(user){
+  const folderID = 'xxx';
+  const docID = 'xxx';
+  const docTemp = DriveApp.getFileById(docID);
+  const mainfolder = DriveApp.getFolderById(folderID);
+  const docNew = docTemp.makeCopy(mainfolder);
+  const editNew = DocumentApp.openById(docNew.getId());
+  const body = editNew.getBody();
+  body.replaceText('{name}',user.name);
+  body.replaceText('{position}',user.position); 
+  body.replaceText('{group}',user.group); 
+  body.replaceText('{title}',user.title); 
+  body.replaceText('{date}',user.date); 
+  editNew.saveAndClose();
+  const myBlob = docNew.getAs(MimeType.PDF);
+  const newPDF = mainfolder.createFile(myBlob).setName(user.name);
+  SpreadsheetApp.getActiveSpreadsheet().getSheetByName('ชีต1').getRange(user.row,7).setValue(newPDF.getUrl());
+  docNew.setTrashed(true);
+  return newPDF;
+}
+
+function checkSel(){
+  const ss = SpreadsheetApp.getActive();
+  const sheetName = ss.getActiveSheet().getSheetName();
+  if(sheetName == 'ชีต1') {
+    const range = ss.getSelection().getActiveRange();
+    if(range.getRow() <= ss.getLastRow()){
+      return {
+        sName:sheetName,
+        results:getmyUser(range.getRow(),ss.getLastColumn())
+      }
+    }
+  }
+  return {
+    sName : sheetName,
+    results : null
+  }
+}
+function getmyUser(row,cols){
+  const vals = SpreadsheetApp.getActive().getActiveSheet().getSheetValues(row,1,1,cols)[0];
+  return {
+    name : vals[1],
+    position : vals[2],
+    group : vals[3],
+    title : vals[4],
+    date : Utilities.formatDate(vals[5],"GMT+7", "dd/MM/yyyy") ,
+    row : row
+  }
+}

@@ -1,0 +1,194 @@
+d2[m-detail] **->> Line bot ไก่ชน
+{
+  "line": {
+    "contents": {
+      "type": "bubble",
+      "styles": {
+        "footer": {
+          "separator": true
+        }
+      },
+      "body": {
+        "contents": [
+          {
+            "text": "Line Bot ไก่พื้นเมือง",
+            "color": "#1DB446",
+            "weight": "bold",
+            "type": "text",
+            "size": "sm"
+          },
+          {
+            "size": "xl",
+            "margin": "md",
+            "weight": "bold",
+            "type": "text",
+            "text": "by อ.รติวัฒน์ ปารีศรี"
+          },
+          {
+            "text": "นวัตกรรม Line bot ไก่พื้นเมือง",
+            "wrap": true,
+            "type": "text",
+            "size": "xs",
+            "color": "#aaaaaa"
+          },
+          {
+            "margin": "sm",
+            "type": "separator",
+            "color": "#D43D1D"
+          },
+          {
+            "type": "box",
+            "contents": [
+              {
+                "type": "box",
+                "contents": [
+                  {
+                    "size": "sm",
+                    "color": "#31B404",
+                    "type": "text",
+                    "text": "ฟาร์มไก่พื้นเมือง"
+                  },
+                  {
+                    "color": "#31B404",
+                    "align": "end",
+                    "size": "sm",
+                    "type": "text",
+                    "action": {
+                      "type": "uri",
+                      "uri": "https://sites.google.com/botchicknative.net/site-native-chicken/%E0%B8%9F%E0%B8%B2%E0%B8%A3%E0%B8%A1%E0%B9%84%E0%B8%81%E0%B8%9E%E0%B8%99%E0%B9%80%E0%B8%A1%E0%B8%AD%E0%B8%87"
+                    },
+                    "type": "location",
+					"title": "ฟาร์มไร่ราชันย์",
+					"address": "33/10 ม.11 ต.หัวรอ อ.เมือง จ.พิษณุโลก65000 -โทร. 0815322717 - สุภกิจ พันธะเสน(ต้น) ",
+					"latitude": 16.8680077642152,
+					"longitude": 100.267462481349
+				  }
+                ],
+                "layout": "horizontal"
+              },
+              {
+                "contents": [
+                  {
+                    "color": "#3104B4",
+                    "text": "--เทคนิคการเพาะและพัฒนาพันธุ์ไก่ชน",
+                    "type": "text",
+                    "size": "sm"
+                  },
+                  {
+                    "action": {
+                      "type": "uri",
+                      "uri": "https://sites.google.com/psru.ac.th/inovationcock-game/%E0%B8%82%E0%B8%AD%E0%B8%A1%E0%B8%A5%E0%B8%9E%E0%B8%99%E0%B8%90%E0%B8%B2%E0%B8%99%E0%B9%84%E0%B8%81%E0%B8%8A%E0%B8%99/%E0%B8%81%E0%B8%B2%E0%B8%A3%E0%B9%80%E0%B8%9E%E0%B8%B2%E0%B8%B0%E0%B8%9E%E0%B8%99%E0%B8%98/%E0%B9%80%E0%B8%97%E0%B8%84%E0%B8%99%E0%B8%84%E0%B8%81%E0%B8%B2%E0%B8%A3%E0%B9%80%E0%B8%9E%E0%B8%B2%E0%B8%B0-%E0%B8%9E%E0%B8%92%E0%B8%99%E0%B8%B2%E0%B8%9E%E0%B8%99%E0%B8%98%E0%B9%84%E0%B8%81%E0%B8%8A%E0%B8%99"
+                    },
+                    "color": "#3104B4",
+                    "size": "sm",
+                    "align": "end",
+                    "type": "text",
+                    "text": "ข้อมูล1😭"
+                  }
+                ],
+                "layout": "horizontal",
+                "type": "box"
+              },
+              {
+                "layout": "horizontal",
+                "type": "box",
+                "contents": [
+                  {
+                    "size": "sm",
+                    "type": "text",
+                    "color": "#3104B4",
+                    "text": "--ไก่พ่อ-แม่พันธ์ "
+                  },
+                  {
+                    "color": "#3104B4",
+                    "size": "sm",
+                    "text": "ข้อมูล2 🐮",
+                    "align": "end",
+                    "action": {
+                      "type": "uri",
+                      "uri": "https://sites.google.com/psru.ac.th/inovationcock-game/%E0%B8%82%E0%B8%AD%E0%B8%A1%E0%B8%A5%E0%B8%9E%E0%B8%99%E0%B8%90%E0%B8%B2%E0%B8%99%E0%B9%84%E0%B8%81%E0%B8%8A%E0%B8%99/%E0%B8%81%E0%B8%B2%E0%B8%A3%E0%B9%80%E0%B8%9E%E0%B8%B2%E0%B8%B0%E0%B8%9E%E0%B8%99%E0%B8%98/%E0%B9%84%E0%B8%81%E0%B8%9E%E0%B8%AD%E0%B9%81%E0%B8%A1%E0%B8%9E%E0%B8%99%E0%B8%98"
+                    },
+                    "type": "text"
+                  }
+                ]
+              },
+              {
+                "type": "box",
+                "contents": [
+                  {
+                    "type": "text",
+                    "text": "--การเพาะพันธ์ไก่พม่า",
+                    "color": "#3104B4",
+                    "size": "sm"
+                  },
+                  {
+                    "action": {
+                      "uri": "https://sites.google.com/psru.ac.th/inovationcock-game/%E0%B8%82%E0%B8%AD%E0%B8%A1%E0%B8%A5%E0%B8%9E%E0%B8%99%E0%B8%90%E0%B8%B2%E0%B8%99%E0%B9%84%E0%B8%81%E0%B8%8A%E0%B8%99/%E0%B8%81%E0%B8%B2%E0%B8%A3%E0%B9%80%E0%B8%9E%E0%B8%B2%E0%B8%B0%E0%B8%9E%E0%B8%99%E0%B8%98/%E0%B9%80%E0%B8%9E%E0%B8%B2%E0%B8%B0%E0%B8%9E%E0%B8%99%E0%B8%98%E0%B9%84%E0%B8%81%E0%B8%9E%E0%B8%A1%E0%B8%B2",
+                      "type": "uri"
+                    },
+                    "size": "sm",
+                    "type": "text",
+                    "color": "#3104B4",
+                    "align": "end",
+                    "text": "ข้อมูล3♨️"
+                  }
+                ],
+                "layout": "horizontal"
+              }
+            ],
+            "margin": "xl",
+            "spacing": "sm",
+            "layout": "vertical"
+          },
+          {
+            "margin": "xl",
+            "type": "separator"
+          },
+          {
+            "layout": "horizontal",
+            "type": "box",
+            "contents": [
+              {
+                "color": "#18657a",
+                "height": "sm",
+                "style": "primary",
+                "type": "button",
+                "gravity": "bottom",
+                "action": {
+                  "label": "siteไก่ชน",
+                  "uri": "https://sites.google.com/psru.ac.th/inovationcock-game/",
+                  "type": "uri"
+                }
+              },
+              {
+                "margin": "xl",
+                "type": "separator"
+              },
+              {
+                "type": "button",
+                "color": "#E81029",
+                "action": {
+                  "text": "t2",
+                  "type": "message",
+                  "label": "ลักษณะไก่ชน"
+                },
+                "style": "primary",
+                "height": "sm",
+                "gravity": "bottom"
+              },
+              {
+                "size": "md",
+                "type": "spacer"
+              }
+            ],
+            "margin": "md"
+          }
+        ],
+        "layout": "vertical",
+        "type": "box"
+      }
+    },
+    "altText": "การเพาะพันธ์ไก่ชน",
+    "type": "flex"
+  }
+}

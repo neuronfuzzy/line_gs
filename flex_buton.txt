@@ -1,0 +1,130 @@
+// flex Button -- ร้าน intent a2 ->> Bot Native Chick
+{
+  "line": {
+   "altText": "หน้าเว็ป ไก่พื้นเมือง",
+    "type": "flex",
+    "contents": {
+      "type": "bubble",
+      "hero": {
+        "type": "box",
+        "background": {
+          "endColor": "#ffffff",
+          "angle": "0deg",
+          "startColor": "#000000",
+          "type": "linearGradient"
+        },
+        "contents": [
+          {
+            "type": "image",
+            "url": "https://images.all-free-download.com/images/graphiclarge/man_avatar_icon_classical_design_cartoon_character_sketch_6838971.jpg",
+            "aspectMode": "cover",
+            "align": "center"
+          }
+        ],
+        "layout": "vertical",
+        "action": {
+          "type": "message",
+          "label": "จัดทำโดย",
+          "text": "อ.รติวัฒน์ ปารีศรี"
+        }
+      },
+      "header": {
+        "layout": "vertical",
+        "type": "box",
+        "contents": [
+          {
+            "weight": "regular",
+            "text": "Line Bot Native Chicken by Ratiwat",
+            "style": "normal",
+            "type": "text"
+          }
+        ],
+        "action": {
+          "type": "message",
+          "text": "Line Bot ChickNative",
+          "label": "action"
+        },
+        "backgroundColor": "#F781F3",
+        "position": "relative"
+      },
+      "direction": "ltr",
+      "body": {
+        "alignItems": "center",
+        "justifyContent": "center",
+        "contents": [
+          {
+            "type": "text",
+            "action": {
+              "label": "action",
+              "text": "e-mail:ratiwat@psru.ac.th",
+              "type": "message"
+            },
+            "text": "Ratiwat Paresri"
+          },
+          {
+            "type": "text",
+            "text": "อาจารย์ประจำสาขา IT มรพส."
+          },
+          {
+            "layout": "vertical",
+            "type": "box",
+            "contents": [
+              {
+                "type": "button",
+                "style": "primary",
+                "action": {
+                  "label": "Visit to chickNative",
+                  "type": "uri",
+                  "uri": "https://sites.google.com/botchicknative.net/site-native-chicken/%E0%B8%AB%E0%B8%99%E0%B8%B2%E0%B9%81%E0%B8%A3%E0%B8%81"
+                }
+              },
+              {
+                "type": "box",
+                "layout": "vertical",
+                "contents": [
+                  {
+                    "action": {
+                      "uri": "https://sites.google.com/botchicknative.net/site-native-chicken/%E0%B8%82%E0%B8%AD%E0%B8%A1%E0%B8%A5%E0%B8%9E%E0%B8%99%E0%B8%90%E0%B8%B2%E0%B8%99%E0%B9%84%E0%B8%81%E0%B8%9E%E0%B8%99%E0%B9%80%E0%B8%A1%E0%B8%AD%E0%B8%87",
+                      "label": "ข้อมูลพื้นฐานไก่พื้นเมือง",
+                      "type": "uri"
+                    },
+                    "style": "secondary",
+                    "type": "button"
+                  }
+                ]
+              },
+              {
+                "type": "box",
+                "layout": "vertical",
+                "contents": [
+                  {
+                    "action": {
+                      "uri": "https://sites.google.com/botchicknative.net/site-native-chicken/%E0%B8%AA%E0%B8%B2%E0%B8%A2%E0%B8%9E%E0%B8%99%E0%B8%98%E0%B9%84%E0%B8%81%E0%B8%9E%E0%B8%99%E0%B9%80%E0%B8%A1%E0%B8%AD%E0%B8%87",
+                      "label": "สายพันธ์ไก่พื้นเมือง",
+                      "type": "uri"
+                    },
+                    "color": "#bc8e52",
+                    "margin": "sm",
+                    "style": "primary",
+                    "height": "sm"
+                  //  "style": "secondary",
+                    "type": "button"
+                  }
+                ]
+              }
+            ]
+          }
+        ],
+        "layout": "vertical",
+        "action": {
+          "text": "กลุ่มไก่พื้นเมือง จ.พิษณุโลก",
+          "label": "action",
+          "type": "message"
+        },
+        "cornerRadius": "md",
+        "borderWidth": "normal",
+        "type": "box"
+      }
+    }
+  }
+}
